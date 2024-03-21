@@ -1,5 +1,5 @@
 
-# No modificar
+# No modificar nada
 from verify import verificar
 import preguntas as p
 from question import choose_q
