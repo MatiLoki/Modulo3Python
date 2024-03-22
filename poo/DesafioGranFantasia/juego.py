@@ -1,4 +1,4 @@
-from personaje import Personaje, personaje
+from personaje import personaje
 import random
 
 print("Bienvenido a Gran Fantasia")
@@ -12,12 +12,12 @@ print("Oh no, Ha aparecido un Orco!")
 o = personaje("orco")
 posibilidad_ganar = p.get_probabilidad_ganar(o)
 
-opcion_orco = personaje.mostrar_dialogo_opcion(probabilidad_ganar)
+opcion_orco = personaje.mostrar_dialogo_opcion(posibilidad_ganar)
 
 while opcion_orco == 1:
     numero = random.uniform(0,1)
     #resultado = ''
-    resultado = 'G' if numero < probabilidad_ganar else 'P'
+    resultado = 'G' if numero < posibilidad_ganar else 'P'
     #if numero< probabilidad_ganar:
     #    resultado = 'G'
     #else:
